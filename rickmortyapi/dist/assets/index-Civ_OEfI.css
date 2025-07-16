@@ -1,0 +1,1 @@
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;justify-content:center;max-width:1200px;margin:2rem auto;padding:1rem}.card{background:#fff;border-radius:8px;box-shadow:0 2px 6px #0000001a;overflow:hidden;text-align:center}.card img{width:100%;display:block}.card h3{margin:.5rem 0 0;font-size:1.1rem}.card p{margin:.25rem 0 1rem;color:#555;font-size:.9rem}
