@@ -1,54 +1,72 @@
-# React + TypeScript + Vite
+# 🧪 Rick & Morty React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una web app desarrollada con **React + TypeScript** que consume la API pública de Rick and Morty para mostrar personajes en una cuadrícula responsive. Cada personaje se presenta en una tarjeta con imagen, nombre y especie. Incluye paginación y filtrado por tipo.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Rick and Morty API](https://rickandmortyapi.com/)
+- CSS Grid + Flexbox (estilos personalizados)
 
-## Expanding the ESLint configuration
+## 📦 Instalación
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. Clona el repositorio:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+   ```bash
+   git clone https://github.com/MarcEsteve/rickmortyapp.git
+   cd rickmortyapi
+   ```
+
+2. Instala las dependencias:
+
+   ```bash
+   npm install
+   ```
+
+3. Inicia el entorno de desarrollo:
+
+   ```bash
+   npm run dev
+   ```
+
+## 🖥️ Funcionalidades
+
+- ✅ Renderizado de 9 personajes en una cuadrícula de 3x3.
+- ✅ Diseño responsive adaptado a dispositivos móviles.
+- ✅ Filtro por tipos de personajes con botones interactivos.
+- ✅ Uso de hooks personalizados (`useCharacters`) para gestionar peticiones a la API.
+- ✅ Separación clara de estilos (`global.css` y `CharacterCard.css`).
+
+## 📁 Estructura de carpetas
+
+```
+src/
+├── components/
+│   └── CharacterCard.tsx
+├── hooks/
+│   └── useCharacters.ts
+├── styles/
+│   ├── global.css
+│   └── CharacterCard.css
+├── App.tsx
+├── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🌐 API utilizada
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Endpoint principal: `https://rickandmortyapi.com/api/character`
+- Documentación oficial: [Rick and Morty API Docs](https://rickandmortyapi.com/documentation)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 📱 Capturas de pantalla
+
+*(Puedes añadir aquí capturas del resultado en escritorio y móvil)*
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT. Puedes modificar y usar libremente este código con fines educativos o personales.
+
+---
+
+👨‍💻 Desarrollado por [Marc Esteve](https://github.com/MarcEsteve)
